@@ -1,1 +1,121 @@
-toDoList.scss
+@import "toDoVariables";
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-image: url(https://liquidplanner-wpengine.netdna-ssl.com/wp-content/uploads/2018/10/iStock-1175302204-2.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+h1 {
+	margin: 50px auto;
+
+	text-align: center;
+	font-size: 150px;
+	font-family: $h1-h2-buttonFontFamily;
+}
+
+.container {
+	background-color: white;
+	width: $containerWidth;
+	position: relative;
+	padding: 40px 50px;
+    margin-left: 170px;
+    margin-bottom: 70px;
+	border-radius: 30px;
+    float: left;
+    box-shadow: $boxShadow;
+     
+    h2 {
+    	font-family: $h1-h2-buttonFontFamily;
+    	text-align: center;
+    	font-size: 27px;
+    } 
+ 
+    input {
+    	width: $inputWidth;
+    	height: 40px;
+    	font-size: 20px;
+    	margin-right: 10px;
+    	background-color: $inputBckColor;
+    	border-color: $inputBckColor;
+    	border-radius: 30px;
+
+    	&:hover {
+    		background-color: $inputBckColorHover;
+    	    border-color: $inputBckColorHover;
+    	}
+
+    }
+
+    button {
+    	width: 90px;
+    	height: 40px;
+    	font-size: 20px;
+    	font-family: $h1-h2-buttonFontFamily;
+    	background-color: $buttonBckColor;
+    	border-color: $buttonBckColor;
+    	color: white;
+    	border-radius: 30px;
+
+
+    	&:hover {
+    		background-color: $buttonBckColorHover;
+    	    border-color: $buttonBckColorHover;
+    	}
+
+    	&:visited {
+    	border-radius: 30px;
+
+    	}
+
+    }
+}
+
+.paragraph {
+	width: $paragraphWidth;
+	position: relative;
+	background-color: $paragrapghBckColor;
+    font-size: 20px;
+    border-radius: 30px;
+    margin: 20px 0;
+    padding: 10px;
+}
+
+.week_day {
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Yusei Magic', sans-serif;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@media only screen and (min-width: 768px) {
+    .col-5 {
+        width: 35.66%;
+    }
+
+    .container {
+        
+        width: $containerWidth;
+        
+        input {
+            width: $inputWidth;
+        }   
+    }
+
+    .paragraph {
+        width: $paragraphWidth;
+    }
+}
+
+
+

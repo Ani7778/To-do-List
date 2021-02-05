@@ -1,1 +1,105 @@
-toDoList.css
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(https://liquidplanner-wpengine.netdna-ssl.com/wp-content/uploads/2018/10/iStock-1175302204-2.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+h1 {
+  margin: 50px auto;
+  text-align: center;
+  font-size: 150px;
+  font-family: "Indie Flower", cursive;
+}
+
+.container {
+  background-color: white;
+  width: 500px;
+  position: relative;
+  padding: 40px 50px;
+  margin-left: 170px;
+  margin-bottom: 70px;
+  border-radius: 30px;
+  float: left;
+  box-shadow: 5px 10px 25px #888888;
+}
+.container h2 {
+  font-family: "Indie Flower", cursive;
+  text-align: center;
+  font-size: 27px;
+}
+.container input {
+  width: 300px;
+  height: 40px;
+  font-size: 20px;
+  margin-right: 10px;
+  background-color: #fbdde7;
+  border-color: #fbdde7;
+  border-radius: 30px;
+}
+.container input:hover {
+  background-color: #e9d2de;
+  border-color: #e9d2de;
+}
+.container button {
+  width: 90px;
+  height: 40px;
+  font-size: 20px;
+  font-family: "Indie Flower", cursive;
+  background-color: #7a3c6f;
+  border-color: #7a3c6f;
+  color: white;
+  border-radius: 30px;
+}
+.container button:hover {
+  background-color: #7c4781;
+  border-color: #7c4781;
+}
+.container button:visited {
+  border-radius: 30px;
+}
+
+.paragraph {
+  width: 400px;
+  position: relative;
+  background-color: #e9d2de;
+  font-size: 20px;
+  border-radius: 30px;
+  margin: 20px 0;
+  padding: 10px;
+}
+
+.week_day {
+  font-size: 30px;
+  text-align: center;
+  font-family: "Yusei Magic", sans-serif;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@media only screen and (min-width: 768px) {
+  .col-5 {
+    width: 35.66%;
+  }
+
+  .container {
+    width: 500px;
+  }
+  .container input {
+    width: 300px;
+  }
+
+  .paragraph {
+    width: 400px;
+  }
+}
+
+/*# sourceMappingURL=toDoList.css.map */
